@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SMASHOP</title>
+
+    <!--Bootstrap 5 CSS--->
+    <link rel="stylesheet" type="text/css" href="assets/Bootstrap5/css/bootstrap.css" />
+
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/modalaligns.css" />
+
+    <!--datatables CSS--->
+    <link rel="stylesheet" type="text/css" href="assets/datatables/css/datatables.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/datatables/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/datatables/css/buttons.dataTables.min.css">
+    <script src="https://kit.fontawesome.com/de952d599f.js" crossorigin="anonymous"></script>
+
+    <!--Bootstrap 5 JS--->
+    <script type="text/javascript" src="assets/Bootstrap5/js/bootstrap.bundle.min.js"></script>
+
+    <!--Bootstrap Dropdown Js--->
+    <script type="text/javascript" src="assets/Bootstrap5/js/popper.min.js"></script>
+
+    <!--Datatables js-->
+    <script type="text/javascript" src="assets/js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="../datatable/datatable.js"></script>
+    <script type="text/javascript" src="assets/js/dataTables.responsive.min.js"></script>
+
+    <!--Datatable dropdown----->
+    <script type="text/javascript" src="assets/js/datatables.pdfmake.min.js"></script>
+    <script type="text/javascript" src="assets/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="assets/js/datatables.vfs_fonts.js"></script>
+    <script type="text/javascript" src="assets/js/datatables.jszip.min.js"></script>
+    <script type="text/javascript" src="assets/js/buttons.html5.min.js"></script>
+    <script type="text/javascript" src="assets/js/buttons.print.min.js"></script>
+
+    <!--Dropdown select-->
+    <link rel="stylesheet" href="assets/Bootstrap5/css/bootstrap-select.min.css" />
+    <script src="assets/Bootstrap5/js/bootstrap-select.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-lite.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-lite.js"></script>
+
+    <script src="https://Login.loyalwings.com/assets/js/formValidation.min.js"></script>
+    <script src="https://Login.loyalwings.com/assets/js/bootstrap_validation.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/tabcarousel.css" />
+
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js"></script>
+
+<!--  -->
+   <!-- Include Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Include Bootstrap 5 JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+    body{
+           background-color: #F8F8F8;
+    }
+
+    .blue-header{
+        height: 35px;
+        background-color: #2196F3;
+        white-space: nowrap;
+        font-size: 14px;
+    }
+    .blue-header ul li{
+        color: white;
+        cursor: pointer;
+    }
+    .green-links{
+        background-color: #4CAF50;
+    }
+    .blue-nav{
+        display: flex;
+        gap: 30px;
+        padding-top: 8px;
+        justify-content: space-between;
+        padding-right: 15px;
+
+    }
+     .blue-nav-2{
+        display: flex;
+        gap: 30px;
+     }
+     .main-header{
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        align-items: center;
+     }
+     .smashop-logo{
+        height:55px !important;
+     }
+     .navtab{
+        background-color: #EEEEEE;
+ 
+     }
+     .navtab ul{
+        display: flex;
+        gap: 30px;
+        margin: auto;
+
+     }
+     .navtab li{
+        cursor: pointer;
+        padding: 10px;
+        font-size: 13px !important;
+               white-space: nowrap !important;
+     }
+     @media screen and (max-width: 768px) {
+       .navtab li,.item1,.item2{
+         display: none;
+       }
+
+      .main-header, .tabs, .info{
+        padding: 10px;
+      }
+      .carousel-container{
+        margin-top: 10px;
+      }
+     }
+      @media screen and (max-width: 992px) {
+       .item3,.item4, .empty{
+         display: none;
+       }
+       .main-header{
+        display: block;
+       }
+       .smashop-logo{
+        height: 80px !important;
+       }
+       .logo-div{
+        display: flex;
+        justify-content: center;
+       }
+             .info-div{
+        margin-top: 50px !important;
+      }
+     }
+     .navtab li:hover{
+        background-color: #2196F3;
+        color: white;
+     }
+     .info-div{
+        background-color:#D9EDF7 ;
+        border: 1px solid #C6EAF3;
+            color: #31708f;
+            padding: 15px;
+            margin: 20px auto;
+     }
+
+          .tab-pane {
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            border-radius: 0 0 0.25rem 0.25rem;
+            padding: 1rem;
+        }
+        .login-panel{
+            background-color: #F5F5F5;
+            padding: 25px;
+            border: 1px solid #ddd;
+        }
+        .login-panel label,
+        .register-panel label{
+            display: block;
+            font-size: 13px;
+        }
+         .login-panel-2{
+            padding: 0px 25px ;
+         }
+          .info-div p, .login-panel-2 p, .register-panel p{
+            font-size: 13px;               
+          }
+          .register-panel p{
+            margin-top: 10px;
+            color: rgba(128, 128, 128, 0.765);
+          }
+                  /* Hide inactive tab panes */
+        .tab-pane:not(.show) {
+            display: none !important;
+        }
+        .rgstr{
+            margin-top: -5px !important;
+        }
+        .ftr{
+            background-color: #333333;
+            color: white;
+            margin-top: 85px;
+        }
+        .footer-cntnr{
+            padding-top: 20px ;
+           display: flex;
+            margin: auto;
+        }
+                .footer-cntnr hr{
+                    width: 85%;
+                    margin-top: 5px !important;
+                }
+.footer-cntnr p{
+font-size: 12px;
+}
+.footer-cntnr img{
+height: 25px;
+}
+.footer-cntnr .bi{
+ font-size: 15px;
+ margin: 8px;
+}
+
+        /* Basic styles for the carousel container */
+        .carousel-container {
+            position: relative;
+            width: 90%;
+            max-width: 500px; /* Adjust the maximum width as needed */
+            margin: 0 auto;
+            overflow: hidden;
+            padding: 10px !important;
+         background-color: white;
+         margin: 20px auto;
+         border: 1px solid #ddd;
+        }
+
+        /* Styles for the individual slides */
+        .carousel-slide {
+            display: none;
+            margin-top: 10px;
+            width: 100%;
+            height: 100%; /* Set the carousel height here */
+        }
+
+        .carousel-slide img {
+           height: 130px;
+            
+            object-fit: cover;
+        }
+
+        /* Style for the control buttons */
+        .carousel-control {
+         height: 25px;
+         padding: 0px;
+         width: 25px;
+         background-color: white;
+         color: #2196F3;
+         border: 1px solid #ddd;
+            cursor: pointer;
+        }
+        .carousel-controls-div{
+         float: right;
+         display: block;
+         
+        }
+</style>
+<body>
+<section class="blue-header">
+                    <ul class="blue-nav col-md-8 m-auto">
+    <div class="d-flex gap-4">
+        <li class="item1">About</li>
+        <li class="item2">Contact</li>
+    </div>
+    <div class="d-flex blue-nav-2">
+        <li class="item3"><i class="bi bi-cart-fill"></i> Buy Now!</li>
+        <li class="item4"> <i class="bi bi-person-fill"></i>Admin Demo</li>
+        <li class="item5"><img src="https://flagicons.lipis.dev/flags/4x3/sh.svg" style="height: 11px;margin-right: 5px;" alt="">English</li>
+        <li class="item6"> <i class="bi bi-currency-dollar"></i>USD</li>
+        <li class="item7"> <i class="bi bi-door-closed-fill"></i>Log in</li>
+    </div>
+</ul>
+    </div>
+</section>
+<section class="main-header col-lg-8 m-auto">
+
+<div class="logo-div col-lg-4">
+    <img class="smashop-logo" src="../project 2/sma-shop.png" alt="logo">
+</div>
+
+        <div class="col-lg-4">
+            <div class="purchasegrp col-sm-12">
+                <input type="text" class="form-control purchaseselects" placeholder="Search">
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+                <button type="button" class="hrbtns record-button contractbtn empty"
+                    onclick="window.location.href = 'recordexpense.html';" style="padding: 6px 12px;margin: 5px !important;">
+                    <i class="bi bi-cart-fill"></i> Empty Cart
+                </button>
+        </div>
+
+</section>
+<section class="navtab">
+<ul class="col-lg-8"> 
+<li>Home</li>
+<li>Products</li>
+<li>Categories</li>
+<li>Brands</li>
+<li>Shopping Cart</li>
+<li>Checkout</li>
+</ul>
+</section>
+<section class="info">
+<div class="info-div col-lg-8">
+<p><b>Shop module is not complete item but add-on to Stock Manager Advance and is available separately.</b></p>
+<p>This is joint demo for main item (Stock Manager Advance) and add-ons (POS & Shop Module). Please check the item page on codecanyon.net for more info about what's not included in the item and you must read the page there before purchase. Thank you</p>
+</div>
+</section>
+<!-- tabs -->
+<section class="tabs">
+    <div class="col-lg-8  mx-auto d-flex flex-wrap">
+        <div class="col-lg-10 col-sm-12">
+ <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="tab1-tab" data-bs-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Login</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="tab2-tab" data-bs-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Register</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="myTabContent">
+                     <div class="tab-pane fade show active d-flex flex-column flex-md-row" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+    <div class="login-panel col-md-6 col-12">
+        <div>
+            <div class="purchasegrp">
+                <label class="purchaseinfo">Username/Email  <a class="float-end" href="">Register</a></label>
+                <input type="email" class="form-control purchaseselects">
+            </div>
+        </div>
+        <div>
+            <div class="purchasegrp">
+                <label class="purchaseinfo">Password <a class="float-end" href="">Forgot?</a></label>
+                <input type="password" class="form-control purchaseselects">
+            </div>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+                Remember me
+            </label>
+        </div>
+        <button style="width: 100%;" type="button" class="approvedbtn finishedbtn">Finished</button>
+    </div>
+    <div class="login-panel-2 col-md-6 col-12 mt-md-0 mt-3">
+        <h6><b>Register New Account</b></h6>
+        <hr>
+        <p>If you don't have an account yet, please register an account with us or login with a social media website. This will give you the option to manage your orders and much more.</p>
+        <button type="button" class="hrbtns record-button contractbtn float-end">
+            Register
+        </button>
+    </div>
+</div>
+
+                        <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                          <div class="register-panel">
+<div class="row">
+                              <div class="purchasegrp col-md-6">
+                    <label class="purchaseinfo"><b>First name</b></label>
+                    <input type="text" class="form-control purchaseselects">
+                </div>
+                         <div class="purchasegrp col-md-6">
+                    <label class="purchaseinfo"><b>Last name</b></label>
+                    <input type="text" class="form-control purchaseselects">
+                </div>
+                         <div class="purchasegrp col-md-6">
+                    <label class="purchaseinfo"><b>Company</b></label>
+                    <input type="text" class="form-control purchaseselects">
+                </div>
+                         <div class="purchasegrp col-md-6">
+                    <label class="purchaseinfo"><b>Phone</b></label>
+                    <input type="number" class="form-control purchaseselects">
+                </div>
+                       <div class="purchasegrp col-md-6">
+                    <label class="purchaseinfo"><b>Email</b></label>
+                    <input type="email" class="form-control purchaseselects">
+                </div>
+                       <div class="purchasegrp col-md-6">
+                    <label class="purchaseinfo"><b>Username</b></label>
+                    <input type="email" class="form-control purchaseselects">
+                </div>
+                         <div class="purchasegrp col-md-6">
+                    <label class="purchaseinfo"><b>Password</b></label>
+                    <input type="password" class="form-control purchaseselects">
+                    <p>At least 1 capital, 1 lowercase, 1 number and more than 8 characters long</p>
+                </div>
+                         <div class="purchasegrp col-md-6">
+                    <label class="purchaseinfo"><b>Confirm password</b></label>
+                    <input type="password" class="form-control purchaseselects">
+                </div>
+                          </div>
+                             <button type="button" class="hrbtns record-button contractbtn rgstr">
+                    Register
+                </button>
+                          </div>
+                        </div>
+                    </div>
+                   </div>
+                   <div class="col-lg-2 col-sm-12  mx-auto">
+<div class="d-flex" style="justify-content: space-between;
+    align-items: baseline;">
+<h5><b>Featured</b></h5>
+ <div class="carousel-controls-div">
+        <button class="carousel-control" onclick="changeSlide(-1)"><i class="bi bi-arrow-left"></i></button>
+        <button class="carousel-control" onclick="changeSlide(1)"><i class="bi bi-arrow-right"></i></button>
+    </div>
+</div>
+<hr class="m-auto" style="color: blue;opacity: 100%; ;width: 98%; height: 3px;">
+<div class="carousel-container">
+    <div class="carousel-slide active">
+        <div style="display: flex; justify-content: center;"><img src="../project 2/minion.png" ></div>
+       <div class="d-flex justify-content-between"> <p><b>Minion (Crazy)</b></p> <p>14.00</p></div>
+        <p>toy</p>
+    </div>
+    <div class="carousel-slide">
+       <div style="display: flex; justify-content: center;">
+         <img src="../project 2/watermelon.png">
+       </div>
+        <div class="d-flex justify-content-between"> <p><b>Watermelon</b></p> <p>4.50</p></div>
+        <p>Fruit</p>
+    </div>
+    <div class="carousel-slide">
+       <div style="display: flex; justify-content: center;">
+         <img src="../project 2/pineapple.png">
+       </div>
+        <div class="d-flex justify-content-between"> <p><b>pineapple</b></p> <p>5.60</p></div>
+        <p>Fruit</p>
+    </div>
+</div>
+                </div>
+                </div>
+                
+</section>
+
+<!-- footer -->
+<section class="ftr">
+    <footer class="col-md-8 footer-cntnr">
+        <div class="container">
+  <div class="row">
+    <!-- First Column (6 columns for larger screens, 12 columns for smaller screens) -->
+    <div class="col-lg-6 col-12 div1">
+      <h5>About us</h5>
+      <hr>
+      <p>Stock Manager Advance - SMA Shop - Demo Ecommerce Shop that would help you to sell your products from your site. <a href="">Read more</a></p>
+      <div class="d-flex gap-3">
+        <p>010 1234 567</p>
+        <p>info@tecdiary.com</p>
+      </div>
+      <div class="d-flex gap-3">
+        <p><a href="">Privacy Policy</a></p>
+        <p><a href="">Terms & Conditions</a></p>
+        <p><a href="">Contact us</a></p>
+      </div>
+    </div>
+
+    <!-- Second Column (3 columns for larger screens, 12 columns for smaller screens) -->
+    <div class="col-lg-3 col-12 div2 mt-md-0 mt-3">
+      <h5>Payment methods</h5>
+      <hr>
+      <p>We accept PayPal or you can pay with your credit/debit cards.</p>
+      <div class="d-flex gap-3">
+        <img src="../project 2" alt="">
+        <img src="../project 2/mastercard.svg" alt="">
+        <img src="../project 2/mir.svg" alt="">
+        <img src="../project 2/paypal.svg" alt="">
+        <img src="../project 2/visa.svg" alt="">
+      </div>
+    </div>
+
+    <!-- Third Column (3 columns for larger screens, 12 columns for smaller screens) -->
+    <div class="col-lg-3 col-12 div3 mt-md-0 mt-3">
+      <h5>Follow us</h5>
+      <hr>
+      <p>Please click the link below to follow us on social media.</p>
+      <i class="bi bi-facebook"></i>
+      <i class="bi bi-twitter"></i>
+    </div>
+  </div>
+</div>
+
+    </footer>
+</section>
+</body>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.carousel-slide');
+
+    function showSlide(index) {
+        slides[currentSlide].style.display = 'none';
+        slides[index].style.display = 'block';
+        currentSlide = index;
+    }
+
+    function changeSlide(direction) {
+        const newIndex = currentSlide + direction;
+        if (newIndex >= 0 && newIndex < slides.length) {
+            showSlide(newIndex);
+        }
+    }
+
+    showSlide(currentSlide); // Show the initial slide
+</script>
+
+</html>
